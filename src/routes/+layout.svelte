@@ -4,6 +4,7 @@
   import cam_buttons from "$lib/images/cam-buttons.png";
   import "../app.css";
   import Navbar from "$lib/components/Navbar.svelte";
+  import { base } from "$app/paths";
 </script>
 <Navbar />
 
@@ -19,7 +20,7 @@
 <map name="image-map">
     <area target="_self" alt="gyro-btn" title="gyro-btn" href="#" coords="42,309,20" shape="circle">
     <area target="_self" alt="af-btn" title="af-btn" href="#" coords="45,245,20" shape="circle">
-    <area target="_self" alt="info-btn" title="info-btn" href="/about" coords="31,362,20" shape="circle">
+    <area target="_self" alt="info-btn" title="info-btn" href="{base}/about" coords="31,362,20" shape="circle">
     <area target="_self" alt="zoomin-btn" title="zoomin-btn" href="" coords="31,486,20" shape="circle">
     <area target="_self" alt="zoomout-btn" title="zoomout-btn" href="" coords="31,525,20" shape="circle">
 </map>
