@@ -22,7 +22,7 @@ const config = {
     kit: {
         adapter: adapter(),
 				paths: {
-							base: process.env.NODE_ENV === 'master' ? '/sveltekit-github-pages' : '',
+							base: process.env.NODE_ENV === 'production' ? '/newwebsiteidea/' : '',
 					}
     }
 };
