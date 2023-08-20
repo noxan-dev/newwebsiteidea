@@ -38,7 +38,6 @@
 <!--          shape="circle">-->
 <!--  </map>-->
 </main>
-
 <footer>
   Chaim Malek 2022
 </footer>
