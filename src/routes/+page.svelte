@@ -1,9 +1,8 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
-
-
 <script>
-  let name = 'Chaim'
+  import Screen from "$lib/components/Screen.svelte";
 </script>
 
-<h1>{name.toUpperCase()}</h1>
+<Screen>
+  <h1>Welcome to SvelteKit</h1>
+  <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+</Screen>
