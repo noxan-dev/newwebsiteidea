@@ -1,7 +1,11 @@
+<script>
+    import { base } from '$app/paths';
+</script>
+
 <nav class="layout">
-  <a sveltekit:prefetch href="/">Home</a>
-  <a sveltekit:prefetch href="/blog">Blog</a>
-  <a sveltekit:prefetch href="/about">About</a>
+  <a sveltekit:prefetch href="{base}/">Home</a>
+  <a sveltekit:prefetch href="{base}/blog">Blog</a>
+  <a sveltekit:prefetch href="{base}/about">About</a>
 </nav>
 
 <style>
