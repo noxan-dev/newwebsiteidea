@@ -1,12 +1,23 @@
 <script>
     import { base } from '$app/paths';
+    import "@picocss/pico/css/pico.css";
 </script>
 
-<nav class="layout">
-  <a sveltekit:prefetch href="{base}/">Home</a>
-  <a sveltekit:prefetch href="{base}/blog">Blog</a>
-  <a sveltekit:prefetch href="{base}/about">About</a>
+<nav>
+  <div class="collapse nav">
+    <div class="nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+      </div>
+  </div>
+  <div>
+    <div><a sveltekit:prefetch href="{base}/">Home</a></div>
+    <div><a sveltekit:prefetch href="{base}/about">About</a></div>
+    <div><a sveltekit:prefetch href="{base}/blog">Blog</a></div>
+  </div>
 </nav>
+
 
 <style>
      nav {
@@ -15,11 +26,12 @@
         padding-bottom: 1rem;
     }
 
-    nav,
-    footer {
-        text-transform: uppercase;
-        font-size: 0.7rem;
-        letter-spacing: 0.1px;
-        font-weight: 500;
+     span {
+        background: #fff;
+        display: block;
+        height: 2px;
+        margin-bottom: 5px;
+        transition: all 0.2s ease-in-out;
+        width: 20px;
     }
 </style>

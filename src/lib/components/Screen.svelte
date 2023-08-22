@@ -1,7 +1,11 @@
+<script>
+  import Navbar from "$lib/components/Navbar.svelte";
+</script>
+
 
 <div class="screen" style="background: #000000;">
   <div class="screen-content">
-    <nav class="side-nav">Nav</nav>
+    <Navbar/>
     <h1 class="section-header">Section</h1>
     <div class="section-body">
       <slot/>
