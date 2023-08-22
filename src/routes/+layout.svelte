@@ -22,37 +22,6 @@
     <area alt="zoomout-btn" coords="31,525,20" href="" shape="circle" target="_self" title="zoomout-btn">
     <area alt="menu-btn" coords="77,487,20" href="" shape="circle" target="_self" title="menu-btn">
 </map>
-  <dialog id="modal-example">
-  <article>
-    <a aria-label="Close"
-      class="close"
-      data-target="modal-example"
-      href="#close"
-      onClick="toggleModal(event)">
-    </a>
-    <h3>Confirm your action!</h3>
-    <p>
-      Cras sit amet maximus risus.
-      Pellentesque sodales odio sit amet augue finibus pellentesque.
-      Nullam finibus risus non semper euismod.
-    </p>
-    <footer>
-      <a class="secondary"
-        data-target="modal-example"
-        href="#cancel"
-        onClick="toggleModal(event)"
-        role="button">
-        Cancel
-      </a>
-      <a data-target="modal-example"
-        href="#confirm"
-        onClick="toggleModal(event)"
-        role="button">
-        Confirm
-      </a>
-    </footer>
-  </article>
-</dialog>
 <!--  <map name="image-map">-->
 <!--    <area target="_self" alt="info-btn" title="info-btn" href="/about" coords="514,359,20" shape="circle">-->
 <!--    <area target="_self" alt="ok-btn" title="ok-btn" href="" coords="538,424,20" shape="circle">-->
