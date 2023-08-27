@@ -5,10 +5,10 @@
 
 <div class="screen" style="background: #000000;">
   <div class="screen-content">
-    <Navbar/>
+    <Navbar />
     <h1 class="section-header">Section</h1>
     <div class="section-body">
-      <slot/>
+      <slot />
     </div>
 
   </div>
@@ -19,9 +19,9 @@
         position: absolute;
         top: 310px;
         left: 100px;
-        height: 220px;
-        width: 320px;
         overflow-y: auto;
+        width: 320px;
+        height: 220px;
         padding-left: 30px;
     }
 
@@ -30,7 +30,7 @@
     }
 
     .screen::-webkit-scrollbar-thumb {
-        background-color: gray;
         border-radius: 20px;
+        background-color: rgb(128, 128, 128);
     }
 </style>
