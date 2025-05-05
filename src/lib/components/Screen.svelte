@@ -1,28 +1,28 @@
 <script>
-  import Navbar from "$lib/components/Navbar.svelte";
+import Navbar from "$lib/components/Navbar.svelte";
 </script>
-
 
 <div class="screen" style="background: #000000;">
   <div class="screen-content">
     <Navbar />
-    <h1 class="section-header">Section</h1>
-    <div class="section-body">
-      <slot />
-    </div>
-
+   <main style="padding: 5px">
+     <h1 class="section-header">Section</h1>
+     <div class="section-body">
+       <slot />
+     </div>
+   </main>
   </div>
 </div>
 
 <style>
     .screen {
         position: absolute;
-        top: 310px;
-        left: 100px;
+        top: 315px;
+        left: 119px;
         overflow-y: auto;
-        width: 320px;
-        height: 220px;
-        padding-left: 30px;
+        width: 300px;
+        max-height: 200px;
+        scrollbar-gutter: stable both-edges
     }
 
     .screen::-webkit-scrollbar {

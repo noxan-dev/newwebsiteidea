@@ -4,7 +4,6 @@
   import "../app.css";
   import { base } from "$app/paths";
 </script>
-
 <main class="container">
   <div>
     <div class="camera-body">
