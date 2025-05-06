@@ -14,7 +14,7 @@
   </div>
 
   <map name="image-map">
-    <area alt="gyro-btn" coords="42,309,20" data-placement="bottom" data-tooltip="Top" href="#" shape="circle"
+    <area alt="gyro-btn" coords="42,309,20" data-placement="top" data-tooltip="Top" href="#" shape="circle"
           target="_self" title="gyro-btn">
     <area alt="af-btn" coords="45,245,20" href="#" shape="circle" target="_self" title="af-btn">
     <area alt="info-btn" coords="31,362,20" href="{base}/about" shape="circle" target="_self" title="info-btn">
