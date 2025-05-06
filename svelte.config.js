@@ -6,6 +6,11 @@ const dev = process.argv.includes('dev');
 const config = {
   kit: {
     adapter: adapter(),
+		prerender: {
+			concurrency: 1,
+			crawl: true,
+			entries: ['*']
+		},
     paths: {
       base: dev ? '' : process.env.BASE_PATH,
     }
