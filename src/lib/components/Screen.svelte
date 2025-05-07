@@ -22,7 +22,8 @@ import Navbar from "$lib/components/Navbar.svelte";
         overflow-y: auto;
         width: 300px;
         max-height: 200px;
-        scrollbar-gutter: stable both-edges
+        scrollbar-gutter: stable both-edges;
+        scrollbar-width: thin;
     }
 
     .screen::-webkit-scrollbar {
