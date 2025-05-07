@@ -9,7 +9,7 @@ const config = {
 		prerender: {
 			concurrency: 1,
 			crawl: true,
-			entries: ['*']
+			entries: ['*', '/blog/1']
 		},
     paths: {
       base: dev ? '' : process.env.BASE_PATH,
