@@ -5,6 +5,6 @@ import Screen from "$lib/components/Screen.svelte";
 <Screen>
      <h1>Settings</h1>
      <footer>
-		<h4>&copy; Chaim Malek 2022</h4>
+		<sub>&copy; Chaim Malek 2022</sub>
 	</footer>
 </Screen>

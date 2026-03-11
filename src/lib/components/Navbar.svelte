@@ -5,7 +5,7 @@
 
 <nav>
     <ul>
-      <li class="nav-icon"><a href="{base}/" sveltekit:prefetch>
+      <li class="nav-icon"><a href="{base}/" aria-label="Home">
         <svg class="bi bi-house" fill="currentColor" height="25" viewBox="0 0 16 16" width="25"
              xmlns="http://www.w3.org/2000/svg">
           <path
@@ -13,7 +13,7 @@
         </svg>
       </a>
       </li>
-      <li class="nav-icon"><a href="{base}/about" sveltekit:prefetch>
+      <li class="nav-icon"><a href="{base}/about" aria-label="About">
         <svg class="bi bi-info" fill="currentColor" height="25" viewBox="0 0 16 16" width="25"
              xmlns="http://www.w3.org/2000/svg">
           <path
@@ -21,7 +21,7 @@
         </svg>
       </a>
       </li>
-      <li class="nav-icon"><a href="{base}/blog" sveltekit:prefetch>
+      <li class="nav-icon"><a href="{base}/blog" aria-label="Blog">
         <svg class="bi bi-journal" fill="currentColor" height="25" viewBox="0 0 16 16" width="25"
              xmlns="http://www.w3.org/2000/svg">
           <path
@@ -31,7 +31,7 @@
         </svg>
       </a>
       </li>
-      <li class="nav-icon"><a href="{base}/settings" sveltekit:prefetch>
+      <li class="nav-icon"><a href="{base}/settings" aria-label="Settings">
         <svg class="bi bi-gear" fill="currentColor" height="25" viewBox="0 0 16 16" width="25"
              xmlns="http://www.w3.org/2000/svg">
           <path
@@ -68,7 +68,7 @@
         color: black;
     }
 
-    .active {
+    /* .active {
         display: block;
-    }
+    } */
 </style>

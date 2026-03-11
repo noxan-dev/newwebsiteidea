@@ -4,8 +4,9 @@
   import "../app.css";
   import { base } from "$app/paths";
 </script>
-<main class="container">
-  <div>
+
+<main>
+  <div style="margin: auto">
     <div class="camera-body">
       <slot></slot>
       <img alt="camera" class="cam-body" src="{cam_body}">
@@ -55,8 +56,6 @@
         width: 700px;
         height: 700px;
         margin: 0 auto;
-        border-radius: 50%;
-        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.2);
         /*transform: rotate(-90deg);*/
     }
 
@@ -94,8 +93,8 @@
     }
 
     main {
-        margin-top: 5vw;
-        margin-bottom: 5rem;
+        margin: auto;
+        height: 100vh
     }
 
     footer {

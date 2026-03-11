@@ -1,0 +1,7 @@
+{
+    "compilerOptions": {
+        "moduleResolution": "bundler",
+        "module": "preserve"
+    },
+     "include": ["src/**/*.d.ts", "src/**/*.js", "src/**/*.svelte"]
+}

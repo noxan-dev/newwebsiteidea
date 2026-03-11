@@ -1,14 +1,16 @@
 <script>
-import Navbar from "$lib/components/Navbar.svelte";
+  import Navbar from "$lib/components/Navbar.svelte";
+
+  let {sectionHeader, children } = $props();
 </script>
 
 <div class="screen" style="background: #000000;">
   <div class="screen-content">
     <Navbar />
    <main style="padding: 5px">
-     <h1 class="section-header">Section</h1>
+     <h1 class="section-header">{sectionHeader}</h1>
      <div class="section-body">
-       <slot />
+       {@render children?.()}
      </div>
    </main>
   </div>
@@ -21,7 +23,7 @@ import Navbar from "$lib/components/Navbar.svelte";
         left: 119px;
         overflow-y: auto;
         width: 300px;
-        max-height: 200px;
+        height: 198px;
         scrollbar-gutter: stable both-edges;
         scrollbar-width: thin;
     }
