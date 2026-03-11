@@ -1,12 +1,10 @@
-export const load = ({fetch, params}) => {
-  console.log(params)
+export const prerender = false;
 
-  const fetchPost = async (id) => {
-    const res = await fetch(`https://dummyjson.com/posts/${id}`)
-    const data = await res.json()
-    return data
-  }
+export const load = async ({fetch, params}) => {
+  const res = await fetch(`https://dummyjson.com/posts/${params.postId}`)
+  const data = await res.json()
+
   return {
-    post: fetchPost(params.postId)
+    post: data
   }
 }

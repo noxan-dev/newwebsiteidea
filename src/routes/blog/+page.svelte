@@ -6,8 +6,7 @@
 </script>
 
 
-<Screen>
-  <h1>This is my blog</h1>
+<Screen sectionHeader="Blog">
   <ul>
     {#each posts as post}
       <div>

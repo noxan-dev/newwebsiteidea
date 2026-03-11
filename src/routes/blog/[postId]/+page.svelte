@@ -1,14 +1,16 @@
-<script>
+<script lang="js">
   import Screen from "$lib/components/Screen.svelte";
 
-  export let data;
-  const { post } = data;
+  let { data } = $props();
+  console.log(data)
 </script>
 
 
 
 <Screen>
-  <header>This is my post {post.id}</header>
-  <h1>{post.title}</h1>
-  <p>{post.body}</p>
+  <div>
+    <header>Chaim M; Post: {data.post.id}</header>
+    <h4>{data.post.title}</h4>
+    <p>{data.post.body}</p>
+  </div>
 </Screen>
