@@ -2,7 +2,6 @@
   import Screen from "$lib/components/Screen.svelte";
 
   let { data } = $props();
-  console.log(data)
 </script>
 
 
