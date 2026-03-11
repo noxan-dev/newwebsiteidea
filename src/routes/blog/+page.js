@@ -1,11 +1,10 @@
-export const load = ({ fetch }) => {
+export const prerender = false;
 
-  const fetchPost = async () => {
-    const postRes = await fetch(`https://dummyjson.com/posts?limit=10`);
-    const postData = await postRes.json();
-    return postData.posts;
-  };
+export const load = async ({ fetch }) => {
+  const res = await fetch('https://dummyjson.com/posts?limit=10');
+  const postData = await res.json();
+
   return {
-    posts: fetchPost()
+    posts: postData.posts
   };
 };

@@ -10,7 +10,10 @@
   <h1>This is my blog</h1>
   <ul>
     {#each posts as post}
-      <li><a href="{base}/blog/{post.id}" data-sveltekit-prefetch>{post.title}</a></li>
+      <div>
+        <h3>{post.title}</h3>
+        <li><a href="{base}/blog/{post.id}" data-sveltekit-prefetch>Read More</a></li>
+      </div>
     {/each}
   </ul>
 </Screen>
