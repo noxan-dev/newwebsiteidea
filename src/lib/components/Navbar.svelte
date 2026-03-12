@@ -40,7 +40,7 @@
       </a>
     </li>
     <li class="nav-icon">
-      <a href="{base}/code" aria-label="code">
+      <a href="/" aria-label="code">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="30"
