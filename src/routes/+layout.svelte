@@ -1,6 +1,4 @@
 <script>
-  import cam_body from "$lib/images/background.png";
-  import cam_buttons from "$lib/images/cam-buttons.png";
   import "../app.css";
   import { base } from "$app/paths";
 </script>
@@ -9,8 +7,8 @@
   <div style="margin: auto">
     <div class="camera-body">
       <slot></slot>
-      <img alt="camera" class="cam-body" src="{cam_body}">
-      <img alt="camera" class="cam-btns" src="{cam_buttons}" usemap="#image-map">
+      <img alt="camera" class="cam-body" src="/background.png">
+      <img alt="camera" class="cam-btns" src="/cam-buttons.png" usemap="#image-map">
     </div>
   </div>
 
