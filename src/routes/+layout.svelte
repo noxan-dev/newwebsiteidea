@@ -7,8 +7,8 @@
   <div style="margin: auto">
     <div class="camera-body">
       <slot></slot>
-      <img alt="camera" class="cam-body" src="/background.png">
-      <img alt="camera" class="cam-btns" src="/cam-buttons.png" usemap="#image-map">
+      <img alt="camera" class="cam-body" src="{base}/background.png">
+      <img alt="camera" class="cam-btns" src="{base}/cam-buttons.png" usemap="#image-map">
     </div>
   </div>
 
@@ -70,14 +70,6 @@
         left: 69%;
     }
 
-    :global(nav),
-    footer {
-        font-size: 0.7rem;
-        font-weight: 500;
-        letter-spacing: 0.1px;
-        text-transform: uppercase;
-    }
-
     :global(html) {
         overflow-y: scroll;
         /* scrollbar-gutter: stable; */
@@ -93,11 +85,5 @@
     main {
         margin: auto;
         height: 100vh
-    }
-
-    footer {
-        margin: 3rem 0;
-        text-align: center;
-        color: rgba(255, 255, 255, 0.4);
     }
 </style>
