@@ -6,7 +6,8 @@
 </script>
 
 
-<Screen sectionHeader="Blog">
+<div>
+  <h1>Blog</h1>
   <ul>
     {#each posts as post}
       <div>
@@ -15,4 +16,4 @@
       </div>
     {/each}
   </ul>
-</Screen>
+</div>

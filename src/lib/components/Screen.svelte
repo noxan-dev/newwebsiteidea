@@ -4,28 +4,24 @@
   let {sectionHeader, children } = $props();
 </script>
 
-<div class="screen" style="background: #000000;">
+<div class="screen">
+  <Navbar />
   <div class="screen-content">
-    <Navbar />
-   <main style="padding: 5px">
-     <h1 class="section-header">{sectionHeader}</h1>
-     <div class="section-body">
-       {@render children?.()}
-     </div>
-   </main>
+    {@render children()}
   </div>
 </div>
 
 <style>
     .screen {
         position: absolute;
-        top: 315px;
-        left: 119px;
+        top: 53%;
+        left: 17%;
+        width: 43%;
+        height: 34%;
         overflow-y: auto;
-        width: 300px;
-        height: 198px;
         scrollbar-gutter: stable both-edges;
         scrollbar-width: thin;
+        background-color: oklch(12.9% 0.042 264.695);
     }
 
     .screen::-webkit-scrollbar {
@@ -35,5 +31,9 @@
     .screen::-webkit-scrollbar-thumb {
         border-radius: 20px;
         background-color: rgb(128, 128, 128);
+    }
+
+    .screen-content {
+      padding: .5rem;
     }
 </style>

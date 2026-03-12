@@ -1,7 +1,16 @@
 <script>
-  import Screen from "$lib/components/Screen.svelte";
+  
 </script>
 
-<Screen sectionHeader="About">
-  <p>About me</p>
-</Screen>
+<div>
+  <h1>Creative Engineer's Hub</h1>
+  <sub>Bridging the visual world with the technical logic</sub>
+</div>
+
+<style>
+  h1 {
+    text-align: center;
+    font-size: larger;
+    margin: 0;
+  }
+</style>

@@ -1,16 +1,20 @@
 <script>
-  import "../app.css";
-  import { base } from "$app/paths";
+    let {children } = $props();
+    import Screen from "$lib/components/Screen.svelte";
+    import "../app.css";
+    import { base } from "$app/paths";
 </script>
 
 <main>
-  <div style="margin: auto">
-    <div class="camera-body">
-      <slot></slot>
-      <img alt="camera" class="cam-body" src="{base}/background.png">
-      <img alt="camera" class="cam-btns" src="{base}/cam-buttons.png" usemap="#image-map">
-    </div>
-  </div>
+  <div class="camera-body">
+
+  <Screen>
+    {@render children?.()}
+  </Screen>
+
+  <img alt="camera" class="cam-body" src="{base}/background.png">
+  <img alt="camera" class="cam-btns" src="{base}/cam-buttons.png" usemap="#image-map">
+</div>
 
   <map name="image-map">
     <area alt="gyro-btn" coords="42,309,20" data-placement="top" data-tooltip="Top" href="#" shape="circle"
@@ -51,9 +55,8 @@
         position: relative;
         top: 0;
         left: 0;
-        width: 700px;
-        height: 700px;
         margin: 0 auto;
+        width: 40rem;
         /*transform: rotate(-90deg);*/
     }
 
@@ -62,12 +65,14 @@
         top: 0;
         left: 0;
         pointer-events: none;
+        width: 100%;
     }
 
     .cam-btns {
         position: absolute;
         top: 0;
         left: 69%;
+        height: 100%;
     }
 
     :global(html) {

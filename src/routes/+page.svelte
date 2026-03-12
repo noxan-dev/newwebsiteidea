@@ -4,10 +4,11 @@
   import Model from '$lib/components/Model.svelte'
 </script>
 
-<Screen>
+<div>
   <h1>Welcome to SvelteKit</h1>
   <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
-</Screen>
+</div>
+
 
 <!-- <Canvas>
   <T.PerspectiveCamera makeDefault position={[0, 1, 5]} />
